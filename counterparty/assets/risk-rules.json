@@ -1,0 +1,56 @@
+{
+  "weights": {
+    "counterpartyMaturity": 30,
+    "economicReliability": 40,
+    "securityPosture": 30
+  },
+  "recommendations": [
+    {
+      "min": 80,
+      "max": 100,
+      "riskLevel": "low",
+      "recommendation": "proceed"
+    },
+    {
+      "min": 60,
+      "max": 79,
+      "riskLevel": "medium",
+      "recommendation": "proceed_with_caution"
+    },
+    {
+      "min": 40,
+      "max": 59,
+      "riskLevel": "elevated",
+      "recommendation": "request_additional_verification"
+    },
+    {
+      "min": 20,
+      "max": 39,
+      "riskLevel": "high",
+      "recommendation": "use_alternative_path"
+    },
+    {
+      "min": 0,
+      "max": 19,
+      "riskLevel": "critical",
+      "recommendation": "reject"
+    }
+  ],
+  "nextActionSkills": {
+    "payment": "send_transaction",
+    "swap": "swap",
+    "stake": "stake",
+    "deposit": "contract_interaction",
+    "contract_call": "contract_interaction",
+    "delegation": "identity_verification",
+    "alternativePath": "escrow",
+    "halt": "none"
+  },
+  "defaults": {
+    "uncertainRecommendation": "request_additional_verification",
+    "criticalNextAction": {
+      "skill": "none",
+      "type": "halt"
+    }
+  }
+}
