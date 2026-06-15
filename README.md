@@ -15,21 +15,18 @@ Install the skill by copying the `counterparty/` folder into the skills director
 ### OpenClaw
 
 ```bash
-mkdir -p ~/.openclaw/skills
 cp -R counterparty ~/.openclaw/skills/
 ```
 
 ### Claude Code
 
 ```bash
-mkdir -p ~/.claude/skills
 cp -R counterparty ~/.claude/skills/
 ```
 
 ### Codex
 
 ```bash
-mkdir -p ~/.codex/skills
 cp -R counterparty ~/.codex/skills/
 ```
 
